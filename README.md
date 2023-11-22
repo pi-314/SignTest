@@ -8,3 +8,35 @@ Second change (VSC sign.)
 Third change (CLI sig.)
 
 Fourth change (VSC sig)
+
+$ gpg --edit-card
+Reader ...........: Yubico YubiKey OTP FIDO CCID
+Application ID ...: D2760001240100000006259260450000
+<....output skipped...>
+
+gpg/card> admin
+Admin commands are allowed
+
+gpg/card> passwd
+# <--- At this step pinentry-mac will ask you to enter your Admin PIN (PUC)
+gpg: OpenPGP card no. D2760001240100000006259260450000 detected
+
+1 - change PIN
+2 - unblock PIN
+3 - change Admin PIN
+4 - set the Reset Code
+Q - quit
+Your selection? 2
+
+# <--- At this step pinentry-mac will ask you (twice) to enter the new PIN
+PIN unblocked and new PIN set.
+
+1 - change PIN
+2 - unblock PIN
+3 - change Admin PIN
+4 - set the Reset Code
+Q - quit
+
+Your selection? Q
+
+gpg/card> q
