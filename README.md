@@ -3,3 +3,4 @@ This is just a test repo, which is subjected to be deleted at any time. You are 
 
 First change (CLI sign.)
 
+Second change (VSC sign.)
